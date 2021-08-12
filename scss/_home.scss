@@ -30,7 +30,7 @@
     .text{
         width: 100%;
         max-width: 45rem;
-        span{
+        .tag{
             display: inline-block;
             margin-bottom: 1.9rem;
             line-height: 2.8rem; //height of the element
@@ -40,6 +40,16 @@
             color: $primary-color;
             border-radius: 2rem;
             padding: 0px 2.4rem;
+        }
+        .scroll{
+            gap: 1.2rem;
+            display: flex;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: $primary-color-light;
+            text-transform: uppercase;
         }
     }
     .btn-hero{
