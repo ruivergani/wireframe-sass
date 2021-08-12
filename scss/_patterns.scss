@@ -23,7 +23,7 @@ h3{
     display: inline-block;
     font-weight: 600;
     color: $white;
-    .outline{
+    &.outline{
         background-color: transparent;
         color: $primary-color;
         border: 1px solid $primary-color;

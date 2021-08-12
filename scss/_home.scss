@@ -1,0 +1,30 @@
+.s-hero{
+    padding-top: 8.6rem;
+    .container{
+        @include flex(row, center, space-between);
+    }
+    .image{
+        width: 100%;
+        max-width: 78rem;
+        height: 50rem;
+        position: relative; // to keep the images in this div
+        @include flex(row, center, center);
+        margin-right: -13rem; // to position outside the div
+        .img{
+            position: relative;
+            &.one, 
+            &.three{
+                position: absolute; //sobrepor imagem principal
+                bottom: 0;
+            }
+            &.one{
+                left: 0;
+                z-index: 20;
+            }
+            &.three{
+                right: 0;
+            }
+        }
+
+    }
+}

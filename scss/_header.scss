@@ -1,8 +1,7 @@
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
+    z-index: 30;
     height: 11rem;
     background-color: $white;
     display: flex;
@@ -10,6 +9,7 @@ header{
     .container{
         @include flex(row, center, space-between);
         border-bottom: 0.5px solid $primary-color-super-light;
+        padding: 3.8rem 1.5rem;
     }
     nav{
         display: flex;
