@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+}
+a{
+    cursor: pointer;
+}
