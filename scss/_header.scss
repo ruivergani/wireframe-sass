@@ -1,0 +1,46 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    background-color: $white;
+    display: flex;
+    .container{
+        @include flex(row, center, space-between);
+        border-bottom: 0.5px solid $primary-color-super-light;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 2.4rem; //instead of using margin-left you can use gap
+            li{
+                a{
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    line-height: 15px;
+                    letter-spacing: 0.06em;
+                    color: $gray-color-1;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .btns{
+            margin-left: 5.2rem;
+            display: flex;
+            gap: 1.6rem; //applied in the father element
+            button{
+                font-weight: bold;
+                font-size: 1.2rem;
+                line-height: 15px;
+                letter-spacing: 0.06em;
+                color: $primary-color-light;
+                border: none;
+                
+            }
+        }
+    }
+}
