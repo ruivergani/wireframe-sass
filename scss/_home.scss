@@ -131,6 +131,10 @@
                 p{
                     padding-top: 0.8rem;
                     padding-bottom: 2.8rem;
+                    &.purple{
+                        color: $primary-color;
+                        font-weight: 600;
+                    }
                 }
             }
             .body-card-plan{
@@ -154,3 +158,5 @@
         }
     }
 }
+
+// section 
