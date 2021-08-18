@@ -12,6 +12,13 @@ h2{
 h3{
     font-size: 2rem;
 }
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    line-height: 110%;
+    color: $text-color;
+}
+
 .btn-primary{
     background-color: $primary-color;
     border-radius: 5px;
