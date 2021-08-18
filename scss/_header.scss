@@ -26,6 +26,10 @@ header{
                     letter-spacing: 0.06em;
                     color: $gray-color-1;
                     text-transform: uppercase;
+                    transition: all .3s;
+                    &:hover{
+                        color: $primary-color;
+                    }
                 }
             }
         }
@@ -33,6 +37,7 @@ header{
             margin-left: 5.2rem;
             display: flex;
             gap: 1.6rem; //applied in the father element
+            
             button{
                 font-weight: bold;
                 font-size: 1.2rem;
@@ -40,7 +45,10 @@ header{
                 letter-spacing: 0.06em;
                 color: $primary-color-light;
                 border: none;
-                
+                transition: all .3s;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
         }
     }

@@ -3,7 +3,6 @@ h1,h2,h3{
     font-weight: bold;
     line-height: 110%; // related with the size of the font
 }
-
 h1{
     font-size: 6.4rem;
 }
@@ -16,16 +15,26 @@ h3{
 .btn-primary{
     background-color: $primary-color;
     border-radius: 5px;
-    line-height: 5.5rem; // set the height automatically (don't need to use flex)
+    line-height: 5.48rem; // set the height automatically (don't need to use flex)
     text-align: center;
     font-size: 1.8rem;
     padding: 0px 6rem;
     display: inline-block;
     font-weight: 600;
     color: $white;
+    transition: all .2s;
+    border: 1px solid $primary-color;
+
     &.outline{
         background-color: transparent;
         color: $primary-color;
-        border: 1px solid $primary-color;
+    }
+    &:hover{
+        background-color: transparent;
+        color: $primary-color;
+    }
+    &.outline:hover{
+        color: $white;
+        background-color: $primary-color;
     }
 }
