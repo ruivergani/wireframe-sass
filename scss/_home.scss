@@ -159,4 +159,24 @@
     }
 }
 
-// section 
+// section trend
+.s-trend{
+    padding-top: 9rem;
+    padding-bottom: 14.5rem;
+    .container{
+        @include flex(column, center, center);
+    }
+    .top-title{
+        width: 100%;
+        max-width: 90rem;
+        text-align: center;
+        h2{
+            padding-bottom: 3.2rem;
+            line-height: 135%;
+        }
+        .act-btns{
+            @include flex(row, center, center);
+            gap: 2.43rem;
+        }
+    }
+}
