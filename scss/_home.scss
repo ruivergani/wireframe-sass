@@ -75,10 +75,10 @@
         max-width: 68.4rem;
         p{
             padding-top: 1.6rem;
+            padding-bottom: 9rem;
         }
     }
     .card-text{
-        padding-top: 9rem;
         width: 100%;
         max-width: 26.1rem;
         display: flex;
@@ -91,5 +91,10 @@
             padding-top: 1.2rem;
             line-height: 150%;
         }
+    }
+    .cards{
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        gap: 5.6rem;
     }
 }
