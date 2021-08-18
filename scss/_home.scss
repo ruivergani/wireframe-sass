@@ -119,10 +119,10 @@
     .plans{
         @include flex(row, center, center);
         flex-wrap: wrap;
-        gap: 9rem;
+        gap: 8rem;
         .plan-card{
             width: 100%;
-            max-width: 34.5rem;
+            max-width: 35rem;
             border: 1px solid $text-color-light;
             border-radius: 5px;
             padding: 3.4rem;
