@@ -52,4 +52,10 @@ header{
             }
         }
     }
+    @include responsive(768px){
+        nav{
+            display: none;
+            
+        }
+    }
 }
