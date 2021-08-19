@@ -296,6 +296,15 @@
 
 }
 
+// section phrase 
 .s-phrase{
-    
+    .container{
+        @include flex(row, center, center);
+    }
+    text-align: center;
+    h2{
+        width: 100%;
+        max-width: 86.7rem;
+    }
+    padding-bottom: 14.5rem;
 }
