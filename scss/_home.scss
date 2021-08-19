@@ -215,3 +215,52 @@
 }
 
 // section team
+.s-team{
+    .container{
+        @include flex(column, center, center);
+    }
+    .text{
+        width: 100%;
+        max-width: 68.4rem;
+        text-align: center;
+        h2{
+            padding-bottom: 1.6rem;
+        }
+        p{
+            padding-bottom: 9rem;
+        }
+    }
+    .img-box{
+        padding-bottom: 14.5rem;
+        display: flex;
+        gap: 3.2rem;
+        .card{
+            max-width: 28rem;
+            .body-box{
+                h4{
+                    font-family: 'Sora', sans-serif;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    line-height: 110%;
+                    padding-bottom: 0.8rem;
+                    padding-top: 3.2rem;
+                }
+                span{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    line-height: 110%;
+                    text-transform: uppercase;
+                    color: $text-color-light;
+                }
+                p{
+                    padding-top: 3.2rem;
+                    font-size: 1.7rem;
+                    line-height: 135%;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+}
