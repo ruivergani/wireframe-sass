@@ -62,7 +62,6 @@
 }
 
 // section services
-
 .s-services{
     padding-top: 14.5rem;
     padding-bottom: 9rem;
@@ -262,19 +261,35 @@
             }
         }
         .ceo-card{
+            position: relative;
             .title{
                 font-family: 'Sora', sans-serif;
                 font-weight: bold;
                 line-height: 150%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                padding-top: 3.2rem;
+                padding-left: 3.6rem;
                 h5{
                     font-size: 1.7rem;
                     color: $gray-color-3;
-                    padding-bottom: 0.4rem;
+                    padding-bottom: 0.6rem;
                 }
                 span{
                     font-size: 15px;
                     color: $text-color-light;
                 }
+            }
+            p{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding-bottom: 3.2rem;
+                padding-left: 3.6rem;
+                width: 100%;
+                max-width: 35.2rem;
             }
         }
     }
