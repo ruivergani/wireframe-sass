@@ -308,3 +308,60 @@
     }
     padding-bottom: 14.5rem;
 }
+
+//footer
+.d-footer{
+    padding-top: 90px;
+    background-color: $gray-color-1;
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer{
+        @include flex(row, flex-start ,space-between);
+        padding-bottom: 9rem;
+        .left-logo{
+            width: 100%;
+            max-width: 22.1rem;
+            img{
+                padding-bottom: 3.2rem;
+            }
+            p{
+                font-size: 17px;
+                line-height: 135%;
+            }
+        }
+        .right-nav{
+            display: flex;
+            gap: 15rem;
+            .item{
+                ul{
+                    li{
+                        margin-bottom: 2.4rem;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        a{
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.7rem;
+                            line-height: 135%;
+                            color: $text-color-light;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 3.4rem 0rem;
+        border-top: 1px solid rgba(181, 189, 207,0.2);
+        .social-media{
+            display: flex;
+            gap: 24px;
+            
+        }
+    }
+}
