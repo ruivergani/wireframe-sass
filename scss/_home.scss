@@ -164,7 +164,7 @@
     padding-top: 9rem;
     padding-bottom: 14.5rem;
     .container{
-        @include flex(column, center, center);
+        @include flex(row, center, center);
     }
     .top-title{
         width: 100%;
@@ -179,4 +179,37 @@
             gap: 2.43rem;
         }
     }
+}
+.s-trends-text{
+        padding-bottom: 14.5rem;
+        .container{
+            @include flex(row, center, space-between);
+        }
+        
+        .text-right{
+            width: 100%;
+            max-width: 51.9rem;
+            .scroll{
+                gap: 1.2rem;
+                display: flex;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 0.06em;
+                color: $primary-color-light;
+                text-transform: uppercase;
+            }
+            h2{
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
+                width: 100%;
+                max-width: 27rem;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 1.7rem;
+                line-height: 150%;
+                color: $text-color;
+            }
+        }
 }
