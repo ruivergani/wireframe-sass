@@ -2,74 +2,141 @@
 
 @include responsive(480px){
     html{
-        font-size: 48% !important;
+        font-size: 55% !important;
     }
-}
-
-.s-hero{
-    padding-top: 4rem;
-    @include responsive(480px){
+    .s-hero{
+        padding-top: 4rem;
+            .container{
+                @include flex(column, center, center);
+            }
+            .btn-hero{
+                justify-content: center;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 4rem;
+            }
+            .scroll{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .image{
+                flex-direction: column;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                .img{
+                    &.one{
+                        display: none;
+                    }
+                    &.three{
+                        display: none;
+                    }
+                }
+            }
+    }
+    .s-services{
+        padding-top: 4rem;
+        .top-title{
+            p{
+                padding-bottom: 5rem;
+            }
+        }
+        .card-text{
+            .circle-img{
+                max-width: 6rem;
+            }
+        }
+    }
+    .s-plan{
+        padding: 4rem 0rem;
+        .title-plan{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            p{
+                padding-bottom: 4rem;
+                width: 90%;
+            }
+        }
+        .plans{
+            gap: 4rem;
+        }
+    }
+    .s-trend{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         .container{
             @include flex(column, center, center);
         }
-        .btn-hero{
-            justify-content: center;
-            flex-direction: column;
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-        .scroll{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-        .image{
-            flex-direction: column;
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-            .img{
-                &.one{
-                    display: none;
-                }
-                &.three{
-                    display: none;
-                }
+        .top-title{
+            .act-btns{
+                @include flex(column, center, center);
             }
         }
-
     }
-}
-
-.s-services{
-    @include responsive(480px){
-        padding-top: 4rem;
-    }
-    .top-title{
-        p{
-            padding-bottom: 5rem;
+    .s-trends-text{
+        padding-bottom: 8rem;
+        .container{
+            @include flex(column, center, center);
+        }
+        .text-right{
+            padding-top: 3rem;
+            text-align: center;
+            .scroll{
+                justify-content: center;
+                align-items: center;
+            }
+            h2{
+                max-width: 100%;
+                padding-top: 2rem;
+            }
         }
     }
-    .card-text{
-        .circle-img{
-            max-width: 6rem;
+    .s-team{
+        .text{
+            p{
+                padding-bottom: 3rem;
+                line-height: 150%;
+            }
         }
-    }
-}
-
-.s-plan{
-    padding: 4rem 0rem;
-    .title-plan{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        p{
+        .img-box{
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             padding-bottom: 4rem;
-            width: 90%;
         }
     }
-    .plans{
-        gap: 4rem;
+    .s-phrase{
+        padding-bottom: 4rem;
     }
+    .d-footer{
+        padding-top: 4rem;
+        .main-footer{
+            @include flex(column, center , center);
+            padding-bottom: 4rem;
+            .right-nav{
+                flex-direction: column;
+                gap: 3rem;
+                text-align: center;
+                padding-top: 2rem;
+            }
+        }
+        .bottom-footer{
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+
 }
+
+
+
+
+
+
+
+
