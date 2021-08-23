@@ -9,6 +9,8 @@
 }
 html{
     font-size: 62.5%;
+    overflow-x: hidden; // no scroll barra lateral x eixo
+    scroll-behavior: smooth;
 }
 img{
     max-width: 100%;
