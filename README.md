@@ -1,6 +1,6 @@
 # Landing Page Template using Sass
 
-Simple landing page developed in HTML/CSS to pratice Sass.
+Simple landing page developed in HTML/CSS to practice Sass.
 
-* Responsive: Iphone x (only)
-* Use as entry point for other projects.
+* Responsive: iPhone x (only)
+* Use as an entry point for other projects.
